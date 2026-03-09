@@ -1,0 +1,20 @@
+INSERT INTO countries (name, continent)
+VALUES
+    ('United Kingdom', 'Europe'),
+    ('United States', 'North America'),
+    ('France', 'Europe'),
+    ('Germany', 'Europe');
+
+INSERT INTO authors (created_at, updated_at, name, surname, country_id)
+VALUES
+    (NOW(), NOW(), 'George', 'Orwell', 1),
+    (NOW(), NOW(), 'Ernest', 'Hemingway', 2),
+    (NOW(), NOW(), 'Victor', 'Hugo', 3),
+    (NOW(), NOW(), 'Franz', 'Kafka', 4);
+
+INSERT INTO books (created_at, updated_at, name, category, book_state, available_copies, author_id)
+VALUES
+    (NOW(), NOW(), '1984', 'NOVEL', 'GOOD', 5, 1),
+    (NOW(), NOW(), 'Animal Farm', 'CLASSICS', 'GOOD', 3, 1),
+    (NOW(), NOW(), 'The Old Man and the Sea', 'DRAMA', 'GOOD', 4, 2),
+    (NOW(), NOW(), 'Les Miserables', 'CLASSICS', 'BAD', 1, 3);
