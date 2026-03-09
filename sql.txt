@@ -1,3 +1,5 @@
+READY WRITTEN MIGRATION INITIAL FILES
+
 create table countries (
                            id bigserial primary key,
                            name varchar(255) not null,
